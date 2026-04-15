@@ -1,0 +1,78 @@
+@import "fonts";
+
+$font-family-base: 'Georama', sans-serif;
+$font-weight-base: 400;
+
+$font-family-copyright: 'Inter', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+header {
+  .container > .row {
+    height: 119px;
+  }
+
+  .navbar-brand img {
+    width: 230.5px;
+    height: 32px;
+  }
+
+  nav {
+    margin: 0 -40px 0 -40px;
+  }
+
+  a.nav-link {
+    color: #454545;
+    font-family: $font-family-base;
+    font-weight: 500 !important;
+
+    .active, :hover {
+      color: #3f91ad;
+    }
+  }
+
+  .nav-phone {
+    font-family: 'Georama', sans-serif;
+    font-weight: 500 !important;
+    font-size: 17px;
+    padding-right: 12px;
+  }
+
+  .logo-copyright {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    vertical-align: top;
+
+    width: 13.67px;
+    height: 24.58px;
+
+    &::before {
+      content: "\00ae";
+      font-family: $font-family-copyright;
+      font-weight: 400 !important;
+      font-size: 14px;
+      color: inherit;
+      line-height: 1;
+      margin-top: 0;
+    }
+  }
+}
+
+
+.btn-gradient-caps {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  
+  &:hover {
+    background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+    color: #fff;
+    opacity: 0.9;
+  }
+}
