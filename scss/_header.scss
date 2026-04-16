@@ -1,0 +1,64 @@
+header {
+  padding-bottom: 2px;
+
+  .container > .row {
+    padding-top: 40px;
+
+    > [class^="col-"] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+
+  .navbar-brand img {
+    width: 230.5px;
+    height: 32px;
+  }
+
+  .city-selector {
+    font-family: $font-family-georama;
+    font-size: 16px;
+    color: #3c3c3c;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: #3f91ad;
+    }
+
+    img {
+      width: 12px;
+      height: auto;
+    }
+  }
+
+  nav {
+    margin: 0 -40px;
+  }
+
+  a.nav-link {
+    color: #454545;
+    font-family: $font-family-georama;
+    font-weight: 500;
+
+    &.active, &:hover {
+      color: #3f91ad;
+    }
+  }
+  
+  a.nav-phone {
+    font-family: $font-family-georama;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 12px;
+    color: #3c3c3c;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: #3f91ad;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.hero-slider {
+  position: relative;
+
+  .carousel-item {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+      padding-top: 420px;
+    }
+
+    .slider-promo {
+      display: grid;
+      grid-template-columns: 1fr max-content max-content;
+      gap: 0;
+      align-items: end;
+      text-align: left;
+      line-height: normal;
+
+      .slider-promo-text {
+        font-family: $font-family-georama;
+        font-weight: 700 !important;
+        font-size: 34px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        .slider-promo-years {
+          font-family: $font-family-krona-one;
+          font-size: 146px;
+          display: inline-block;
+          line-height: 0.8;
+          vertical-align: top;
+          margin-left: 10px;
+          font-weight: 400;
+        }
+      }
+
+      .slider-promo-suffix {
+        font-family: $font-family-georama;
+        font-weight: 700 !important;
+        font-size: 34px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      height: 7px;
+      width: 98px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 0 5px;
+
+      &.active {
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}

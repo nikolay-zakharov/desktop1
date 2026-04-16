@@ -1,0 +1,50 @@
+footer {
+  font-family: $font-family-georama;
+  background-color: #d9d9d9;
+  padding: 50px 0;
+
+  .footer-menu {
+    font-size: 16px;
+    line-height: 45px;
+
+    > * {
+      display: block;
+      color: #3c3c3c;
+    }
+
+    a {
+      color: #3c3c3c;
+      text-decoration: none;
+
+      &:hover, &.active {
+        color: #3f91ad;
+      }
+    }
+  }
+
+  a.nav-phone {
+    font-family: $font-family-georama;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3c3c3c;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: #3f91ad;
+    }
+  }
+
+  .footer-contacts {
+    padding-top: 30px;
+    font-family: $font-family-georama;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+
+    > * {
+      display: block;
+      color: #3c3c3c;
+    }
+  }
+}

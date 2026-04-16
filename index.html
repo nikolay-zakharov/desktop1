@@ -16,9 +16,9 @@
                     <img src="img/navbar-logo.svg" alt="Marshall Pools" />
                     <span class="logo-r"></span>
                 </a>
-                <a href="#" class="city-selector">
+                <a href="#" class="city-selector" aria-haspopup="true" aria-expanded="false" data-bs-toggle="modal" data-bs-target="#cityModal">
                     <span class="city-current">г. Краснодар</span>
-                    <img src="img/misc/chevron-down.svg" role="none" />
+                    <img src="img/misc/chevron-down.svg" alt="" aria-hidden="true" />
                 </a>
             </div>
             <div class="col-xl-6 d-none d-xl-block text-center">
@@ -33,7 +33,7 @@
             <div class="col-xl-3 col-6 text-end">
                 <div>
                     <div class="btn btn-gradient-caps">Заказать звонок</div>
-                    <div class="nav-phone">8 800 600 24 79</div>
+                    <a href="tel:88006002479" class="nav-phone">8 800 600 24 79</a>
                 </div>
             </div>
         </div>
@@ -127,8 +127,80 @@
 
 <footer>
     <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" class="navbar-brand">
+                            <img src="img/navbar-logo.svg" alt="Marshall Pools" />
+                            <span class="logo-r"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row footer-contacts">
+                    <div class="col-4">
+                        <a href="tel:88006002479" class="nav-phone">8 800 600 24 79</a>
+                        <div>г. Краснодар</div>
+                    </div>
+                    <div class="col-8 social">
+                        <div>Мы в социальных сетях</div>
+                        <div>
+                            <a href="#" class="social-item">
+                                <div class="inner-well">
+                                    <img src="./img/misc/social-y-dzen.svg" alt="" />
+                                </div>
+                            </a>
+                            <a href="#" class="social-item">
+                                <div class="inner-well">
+                                    <img src="./img/misc/social-y-rythm.svg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <nav class="footer-menu">
+                            <a href="#" class="footer-menu-item active">Каталог бассейнов</a>
+                            <a href="#" class="footer-menu-item">Технологии</a>
+                            <a href="#" class="footer-menu-item">О компании</a>
+                            <a href="#" class="footer-menu-item">Фотогалерея</a>
+                            <a href="#" class="footer-menu-item">Контакты</a>
+                        </nav>
+                    </div>
+                    <div class="col-8">
+                        <div class="footer-menu">
+                            <strong class="footer-menu-item">Правовая информация:</strong>
+                            <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+                            <a href="#" class="footer-menu-item">Соглашение на обработку персональных данных</a>
+                            <div>&nbsp;</div>
+                            <strong>&copy; 2026, <a href="#">marshallpools.ru</a></strong>
+                        </div>
+                    </div>
+                </div></div>
+        </div>
     </div>
 </footer>
+
+<div class="modal fade" id="cityModal" tabindex="-1" aria-labelledby="cityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cityModalLabel">Выберите город</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="nav-link py-2">Москва</a></li>
+                    <li><a href="#" class="nav-link py-2">Санкт-Петербург</a></li>
+                    <li><a href="#" class="nav-link py-2">Казань</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
