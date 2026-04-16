@@ -17,6 +17,13 @@
   font-weight: 100 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Krona One";
+  src: url("../fonts/Krona_One/KronaOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -11877,15 +11884,34 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  padding-bottom: 2px;
+}
 header .container > .row {
-  height: 119px;
+  padding-top: 40px;
+}
+header .container > .row > [class^=col-] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 header .navbar-brand img {
   width: 230.5px;
   height: 32px;
 }
+header .city-selector {
+  font-family: "Georama", sans-serif;
+  font-size: 16px;
+  color: #3c3c3c;
+  text-decoration: none;
+  display: block;
+}
+header .city-selector :hover {
+  color: #3f91ad;
+}
 header nav {
-  margin: 0 -40px 0 -40px;
+  margin: 0 -40px;
 }
 header a.nav-link {
   color: #454545;
@@ -11898,10 +11924,10 @@ header a.nav-link .active, header a.nav-link :hover {
 header .nav-phone {
   font-family: "Georama", sans-serif;
   font-weight: 500 !important;
-  font-size: 17px;
+  font-size: 16px;
   padding-right: 12px;
 }
-header .logo-copyright {
+header .logo-r {
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
@@ -11909,7 +11935,7 @@ header .logo-copyright {
   width: 13.67px;
   height: 24.58px;
 }
-header .logo-copyright::before {
+header .logo-r::before {
   content: "®";
   font-family: "Inter", sans-serif;
   font-weight: 400 !important;
@@ -11919,13 +11945,82 @@ header .logo-copyright::before {
   margin-top: 0;
 }
 
+.hero-slider {
+  position: relative;
+}
+.hero-slider .carousel-item {
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-slider .carousel-item .container {
+  padding-top: 420px;
+}
+.hero-slider .carousel-item .slider-promo {
+  display: grid;
+  grid-template-columns: 1fr max-content max-content;
+  gap: 0;
+  align-items: end;
+  text-align: left;
+  line-height: normal;
+}
+.hero-slider .carousel-item .slider-promo .slider-promo-text {
+  font-family: "Georama", sans-serif;
+  font-weight: 700 !important;
+  font-size: 34px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.hero-slider .carousel-item .slider-promo .slider-promo-text .slider-promo-years {
+  font-family: "Krona One", sans-serif;
+  font-size: 150px;
+  display: inline-block;
+  line-height: 0.8;
+  vertical-align: top;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.hero-slider .carousel-item .slider-promo .slider-promo-suffix {
+  font-family: "Georama", sans-serif;
+  font-weight: 700 !important;
+  font-size: 34px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.hero-slider .carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-slider .carousel-indicators button {
+  height: 7px;
+  width: 98px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+}
+.hero-slider .carousel-indicators button.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
 .btn-gradient-caps {
   border-radius: 15px;
   background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
   border: none;
   text-transform: uppercase;
-  font-weight: 700 !important;
+  font-weight: 700;
   font-size: 20px;
+  text-wrap: nowrap;
   color: #ffffff;
   letter-spacing: 0;
 }

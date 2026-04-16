@@ -3,13 +3,25 @@
 $font-family-base: 'Georama', sans-serif;
 $font-weight-base: 400;
 
-$font-family-copyright: 'Inter', sans-serif;
+$font-family-inter: 'Inter', sans-serif;
+$font-family-georama: 'Georama', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-krona-one: 'Krona One', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 header {
+  padding-bottom: 2px;
+
   .container > .row {
-    height: 119px;
+    padding-top: 40px;
+    
+    > [class^="col-"] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
   }
 
   .navbar-brand img {
@@ -17,13 +29,25 @@ header {
     height: 32px;
   }
 
+  .city-selector {
+    font-family: $font-family-georama;
+    font-size: 16px;
+    color: #3c3c3c;
+    text-decoration: none;
+    display: block;
+
+    :hover {
+      color: #3f91ad;
+    }
+  }
+
   nav {
-    margin: 0 -40px 0 -40px;
+    margin: 0 -40px;
   }
 
   a.nav-link {
     color: #454545;
-    font-family: $font-family-base;
+    font-family: $font-family-georama;
     font-weight: 500 !important;
 
     .active, :hover {
@@ -32,13 +56,13 @@ header {
   }
 
   .nav-phone {
-    font-family: 'Georama', sans-serif;
+    font-family: $font-family-georama;
     font-weight: 500 !important;
-    font-size: 17px;
+    font-size: 16px;
     padding-right: 12px;
   }
 
-  .logo-copyright {
+  .logo-r {
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
@@ -49,12 +73,88 @@ header {
 
     &::before {
       content: "\00ae";
-      font-family: $font-family-copyright;
+      font-family: $font-family-inter;
       font-weight: 400 !important;
       font-size: 14px;
       color: inherit;
       line-height: 1;
       margin-top: 0;
+    }
+  }
+}
+.hero-slider {
+  position: relative;
+  
+  .carousel-item {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+      padding-top: 420px;
+    }
+
+    .slider-promo {
+      display: grid;
+      grid-template-columns: 1fr max-content max-content;
+      gap: 0;
+      align-items: end;
+      text-align: left;
+      line-height: normal;
+
+      .slider-promo-text {
+        font-family: $font-family-georama;
+        font-weight: 700 !important;
+        font-size: 34px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        .slider-promo-years {
+          font-family: $font-family-krona-one;
+          font-size: 150px;
+          display: inline-block;
+          line-height: 0.8;
+          vertical-align: top;
+          margin-left: 10px;
+          font-weight: 400;
+        }
+      }
+
+      .slider-promo-suffix {
+        font-family: $font-family-georama;
+        font-weight: 700 !important;
+        font-size: 34px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      height: 7px;
+      width: 98px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 0 5px;
+
+      &.active {
+        background-color: #fff;
+        opacity: 1;
+      }
     }
   }
 }
@@ -65,11 +165,12 @@ header {
   background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
   border: none;
   text-transform: uppercase;
-  font-weight: 700 !important;
+  font-weight: 700;
   font-size: 20px;
+  text-wrap: nowrap;
   color: #ffffff;
   letter-spacing: 0;
-  
+
   &:hover {
     background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
     color: #fff;
