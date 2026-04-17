@@ -47,4 +47,45 @@ footer {
       color: #3c3c3c;
     }
   }
+
+  .social {
+    > div:first-child {
+      margin-bottom: 10px;
+    }
+
+    .social-item {
+      width: 132px;
+      margin-left: 10px;
+
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      border: 5px solid rgba(177, 177, 177, 0.13);
+      border-radius: 10px;
+
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 4px;
+
+      &:hover {
+        border-color: rgba(63, 145, 173, 0.27);
+        background-color: rgba(173, 209, 221, 0.5);
+      }
+
+      .inner-well {
+        padding: 4px;
+        border-radius: 10px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: 35px;
+      }
+    }
+  }
 }

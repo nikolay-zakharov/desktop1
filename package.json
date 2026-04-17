@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.8"
+  },
+  "scripts": {
+    "watch": "sass --watch ./scss/custom.scss ./css/custom.css --quiet-deps"
   }
 }

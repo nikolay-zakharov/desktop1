@@ -12,6 +12,7 @@ $font-family-krona-one: 'Krona One', sans-serif;
 
 @import "header";
 @import "slider";
+@import "block1";
 @import "footer";
 
 a {
@@ -20,6 +21,18 @@ a {
   &:hover {
     color: #ffffff;
   }
+}
+
+h1, h2 {
+  font-family: $font-family-georama;
+  font-size: 38px;
+  font-weight: 700;
+  color: #3C3C3C;
+  text-transform: uppercase;
+}
+
+.promo-block {
+  padding: 40px 0;
 }
 
 .btn-gradient-caps {
@@ -57,84 +70,5 @@ a {
     color: inherit;
     line-height: 1;
     margin-top: 0;
-  }
-}
-
-.pane-gray {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  //border-width: 5px;
-  //border-radius: 10px;
-  //border-color: rgba(177, 177, 177, 0.13);
-
-  border-radius: 10px;
-  text-align: center;
-  background-color: rgba(217, 217, 217, 0.5);
-  display: inline-block;
-  padding: 2px;
-
-  &:hover {
-    border-color: rgba(63, 145, 173, 0.27);
-    background-color: rgba(173, 209, 221, 0.5);
-  }
-
-  .inner-well {
-    padding: 10px;
-    box-shadow: inset 0 1px 4px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-
-  &.social-item {
-    width: 132px;
-    margin-left: 10px;
-    
-    &:nth-child(1) {
-      margin-left: 0;
-    }
-
-    img {
-      width: auto;
-      height: 45px;
-    }
-  }
-}
-
-.social {
-  > div:first-child {
-    margin-bottom: 10px;
-  }
-
-  .social-item {
-    width: 132px;
-    margin-left: 10px;
-
-    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
-    border: 5px solid rgba(177, 177, 177, 0.13);
-    border-radius: 10px;
-
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 4px;
-
-    &:hover {
-      border-color: rgba(63, 145, 173, 0.27);
-      background-color: rgba(173, 209, 221, 0.5);
-    }
-
-    .inner-well {
-      padding: 4px;
-      border-radius: 10px;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-      width: auto;
-      height: 35px;
-    }
   }
 }
