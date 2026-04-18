@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
         centeredSlides: false,
         spaceBetween: 30,
         loop: false,
-        initialSlide: 0,
+        initialSlide: 1,
         watchOverflow: true,
         slidesOffsetBefore: 480,
-        slidesOffsetAfter: 220,
+        slidesOffsetAfter: -90,
         freeMode: {
             enabled: true,
             sticky: true,
