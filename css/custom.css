@@ -11891,12 +11891,19 @@ a:hover {
   color: #ffffff;
 }
 
-h1, .h1, h2, .h2 {
+h2, .h2, h1, .h1 {
   font-family: "Georama", sans-serif;
-  font-size: 39px;
   font-weight: 700;
   color: #3C3C3C;
   text-transform: uppercase;
+}
+
+h1, .h1 {
+  font-size: 39px;
+}
+
+h2, .h2 {
+  font-size: 38px;
 }
 
 .promo-block {
@@ -12209,8 +12216,8 @@ header a.nav-phone:hover {
   font-family: "Georama", sans-serif;
 }
 .catalog .product-grid {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
 .catalog .product-card {
   margin: 0 4px;
@@ -12280,6 +12287,36 @@ header a.nav-phone:hover {
   flex-shrink: 0;
   max-height: 100%;
   max-width: 100%;
+}
+
+.whyus-wrapper {
+  background-color: rgba(217, 217, 217, 0.5);
+}
+
+.whyus .whyus-brand {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: #727271;
+}
+.whyus .whyus-brand img {
+  width: 296.85px;
+  height: 40.67px;
+}
+.whyus .whyus-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.whyus .whyus-content strong {
+  display: block;
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 24px;
+}
+.whyus .whyus-content-image {
+  align-items: end;
+  width: 100%;
 }
 
 footer {
