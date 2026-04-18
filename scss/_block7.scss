@@ -1,0 +1,47 @@
+.geo-wrapper {
+
+  .geo-brand {
+    position: relative;
+    top: -6px;
+    margin-left: 12px;
+    display: inline-block;
+    color: #727271;
+
+    img {
+      width: 356.03px;
+      height: 48.8px;
+    }
+
+    .logo-r {
+      position: relative;
+      top: 4px;
+      left: -12px;
+    }
+  }
+
+  .geo {
+    list-style: disc;
+
+    ul {
+      margin: 20px 0;
+
+      li {
+        list-style: disc;
+
+        &::marker {
+          color: #E91350;
+          font-size: 1.5rem;
+        }
+
+        a {
+          color: #3c3c3c;
+          text-decoration: none;
+
+          &:hover {
+            color: #3f91ad;
+          }
+        }
+      }
+    }
+  }
+}

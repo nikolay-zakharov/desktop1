@@ -9,6 +9,7 @@ $font-family-montserrat: 'Montserrat', sans-serif;
 $font-family-krona-one: 'Krona One', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/swiper/swiper-bundle.css";
 
 a {
   text-decoration: none;
@@ -247,4 +248,5 @@ h2 {
 @import "block3";
 @import "block4";
 @import "block5";
+@import "block7";
 @import "footer";
