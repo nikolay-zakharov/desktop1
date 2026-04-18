@@ -11910,7 +11910,7 @@ h2, .h2 {
   padding: 40px 0;
 }
 
-.catalog .btn-product-details, .catalog .btn-product-calculate, .btn-gradient-red, .btn-gradient-blue {
+.technology .btn-technology-choose, .catalog .btn-product-details, .catalog .btn-product-calculate, .btn-gradient-red, .btn-gradient-blue {
   border-radius: 15px;
   border: none;
   text-transform: uppercase;
@@ -11920,7 +11920,7 @@ h2, .h2 {
   color: #ffffff;
   letter-spacing: 0;
 }
-.catalog .btn-product-details:hover, .catalog .btn-product-calculate:hover, .btn-gradient-red:hover, .btn-gradient-blue:hover {
+.technology .btn-technology-choose:hover, .catalog .btn-product-details:hover, .catalog .btn-product-calculate:hover, .btn-gradient-red:hover, .btn-gradient-blue:hover {
   color: #ffffff;
   opacity: 0.9;
 }
@@ -11968,20 +11968,28 @@ h2, .h2 {
   background-image: url("../img/misc/pagination-next.svg");
 }
 
-.pagination-link {
+.pagination-link, .badge-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  color: #000;
   margin: 0 4px;
   min-width: 21px;
   height: 21px;
   padding: 0 2px;
-  border: 1px solid #727271;
   border-radius: 50px;
   text-decoration: none;
   line-height: 1;
+}
+
+.badge-number {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.pagination-link {
+  color: #000;
+  border: 1px solid #727271;
   transition: all 0.3s;
 }
 .pagination-link.active {
@@ -12307,16 +12315,102 @@ header a.nav-phone:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 400;
 }
-.whyus .whyus-content strong {
+.whyus .whyus-content .large {
   display: block;
   margin: 20px 0;
-  font-weight: 400;
   font-size: 24px;
 }
 .whyus .whyus-content-image {
-  align-items: end;
   width: 100%;
+}
+
+.technology {
+  color: #3c3c3c;
+}
+.technology .technology-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.technology .technology-content .large {
+  display: block;
+  margin: 20px 0;
+  font-size: 24px;
+}
+.technology .technology-content .strong {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.technology .technology-content-image {
+  width: 100%;
+}
+.technology .technology-materials {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+}
+.technology .technology-materials .technology-materials-image {
+  position: relative;
+  top: -40px;
+}
+.technology .technology-materials .technology-materials-char-wrapper {
+  margin-top: 44px;
+  margin-left: 18px;
+}
+.technology .technology-materials .technology-materials-char-wrapper > .row > :first-child {
+  padding-left: 40px;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-list {
+  list-style: none;
+  padding-left: 0;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-list li {
+  display: block;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  list-style: none;
+  padding-left: 34px;
+  text-indent: -34px;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-list li .badge-number {
+  text-indent: 0;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-list li .icon-plus {
+  display: inline-block;
+  position: relative;
+  text-indent: 0;
+  top: 2px;
+  left: 7px;
+  height: 27px;
+  width: 27px;
+  font-weight: 800;
+  font-size: 24px;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-list .lite {
+  font-weight: 400;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-durability {
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.technology .technology-materials .technology-materials-char-wrapper .technology-materials-durability .number {
+  font-weight: 700;
+  font-size: 96px;
+}
+.technology .btn-technology-choose {
+  background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+  padding: 5px 46px;
+  margin-top: 70px;
+  margin-bottom: 36px;
+}
+.technology .btn-technology-choose:hover {
+  background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
 }
 
 footer {

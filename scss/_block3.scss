@@ -20,17 +20,16 @@
     font-family: $font-family-montserrat;
     font-size: 16px;
     line-height: 1.25;
+    font-weight: 400;
 
-    strong {
+    .large {
       display: block;
       margin: 20px 0;
-      font-weight: 400;
       font-size: 24px;
     }
   }
 
   .whyus-content-image {
-    align-items: end;
     width: 100%;
   }
 }

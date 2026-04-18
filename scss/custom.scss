@@ -104,23 +104,30 @@ h2 {
   background-image: url("../img/misc/pagination-next.svg");
 }
 
-.pagination-link {
+%badge-number-base {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  color: #000;
   margin: 0 4px;
-
   min-width: 21px;
   height: 21px;
   padding: 0 2px;
-
-  border: 1px solid #727271;
   border-radius: 50px;
-
   text-decoration: none;
   line-height: 1;
+}
+
+.badge-number {
+  @extend %badge-number-base;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.pagination-link {
+  @extend %badge-number-base;
+  color: #000;
+  border: 1px solid #727271;
   transition: all 0.3s;
 
   &.active {
@@ -236,4 +243,5 @@ h2 {
 @import "block1";
 @import "block2";
 @import "block3";
+@import "block4";
 @import "footer";

@@ -1,0 +1,104 @@
+.technology {
+  color: #3c3c3c;
+
+  .technology-content {
+    font-family: $font-family-montserrat;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-top: 30px;
+
+    .large {
+      display: block;
+      margin: 20px 0;
+      font-size: 24px;
+    }
+
+    .strong {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .technology-content-image {
+    width: 100%;
+  }
+
+  .technology-materials {
+    font-family: $font-family-montserrat;
+    padding-left: 30px;
+
+    .technology-materials-image {
+      position: relative;
+      top: -40px;
+    }
+
+    .technology-materials-char-wrapper {
+      margin-top: 44px;
+      margin-left: 18px;
+
+      > .row > :first-child {
+        padding-left: 40px;
+      }
+
+      .technology-materials-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          display: block;
+          margin: 10px 0;
+          font-weight: 600;
+          text-transform: uppercase;
+          list-style: none;
+          padding-left: 34px;
+          text-indent: -34px;
+
+          .badge-number {
+            text-indent: 0;
+          }
+
+          .icon-plus {
+            display: inline-block;
+            position: relative;
+            text-indent: 0;
+            top: 2px;
+            left: 7px;
+            height: 27px;
+            width: 27px;
+            font-weight: 800;
+            font-size: 24px;
+          }
+        }
+
+        .lite {
+          font-weight: 400;
+        }
+      }
+
+      .technology-materials-durability {
+        font-weight: 600;
+        font-size: 32px;
+        text-transform: uppercase;
+        line-height: 1;
+
+        .number {
+          font-weight: 700;
+          font-size: 96px;
+        }
+      }
+    }
+  }
+
+  .btn-technology-choose {
+    @extend %btn-gradient-base;
+    background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+    padding: 5px 46px;
+    margin-top: 70px;
+    margin-bottom: 36px;
+
+    &:hover {
+      background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+    }
+  }
+}
