@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
         watchOverflow: true,
         slidesOffsetBefore: 480,
         slidesOffsetAfter: 220,
-        freeMode: true,
-        freeModeSticky: true,
+        freeMode: {
+            enabled: true,
+            sticky: true,
+            momentum: true,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -18,9 +21,19 @@ document.addEventListener('DOMContentLoaded', function () {
         observeParents: true,
         init: true,
         on: {
+            init: function () {
+                setTimeout(() => {
+                    this.update();
+                    this.pagination.render();
+                    this.pagination.update();
+                }, 200);
+            },
             imagesReady: function (swiper) {
                 swiper.update();
             },
         },
+
+        slidesPerGroup: 1,
+        cssMode: false,
     });
 });
