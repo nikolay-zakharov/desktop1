@@ -18,4 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
     });
+
+    new Swiper('.portfolio-slider', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: false,
+        initialSlide: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 });
