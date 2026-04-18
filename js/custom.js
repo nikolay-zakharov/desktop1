@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.production-slider', {
+    new Swiper('.production-slider', {
         slidesPerView: 2.4,
         centeredSlides: false,
         spaceBetween: 30,
@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        observer: true,
+        observeParents: true,
+        init: true,
+        on: {
+            imagesReady: function (swiper) {
+                swiper.update();
+            },
         },
     });
 });
