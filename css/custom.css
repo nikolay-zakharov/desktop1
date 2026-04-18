@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../node_modules/swiper/swiper-bundle.css";
+@import "../css/swiper-bundle.css";
 @font-face {
   font-family: "Georama";
   src: url("../fonts/Georama/Georama-VariableFont_wdth,wght.ttf") format("truetype-variations");
