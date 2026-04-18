@@ -33,6 +33,7 @@ h1 {
 h2 {
   @extend %h;
   font-size: 38px;
+  line-height: 1.5;
 }
 
 .promo-block {
@@ -145,6 +146,7 @@ h2 {
   align-items: flex-start;
   justify-content: center;
   vertical-align: top;
+  color: #727271;
 
   width: 13.67px;
   height: 24.58px;
@@ -244,4 +246,5 @@ h2 {
 @import "block2";
 @import "block3";
 @import "block4";
+@import "block5";
 @import "footer";

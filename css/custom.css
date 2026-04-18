@@ -11904,6 +11904,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 38px;
+  line-height: 1.5;
 }
 
 .promo-block {
@@ -12005,6 +12006,7 @@ h2, .h2 {
   align-items: flex-start;
   justify-content: center;
   vertical-align: top;
+  color: #727271;
   width: 13.67px;
   height: 24.58px;
 }
@@ -12300,29 +12302,28 @@ header a.nav-phone:hover {
 .whyus-wrapper {
   background-color: rgba(217, 217, 217, 0.5);
 }
-
-.whyus .whyus-brand {
+.whyus-wrapper .whyus .whyus-brand {
   display: block;
   margin-top: 20px;
   margin-bottom: 60px;
   color: #727271;
 }
-.whyus .whyus-brand img {
+.whyus-wrapper .whyus .whyus-brand img {
   width: 296.85px;
   height: 40.67px;
 }
-.whyus .whyus-content {
+.whyus-wrapper .whyus .whyus-content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
 }
-.whyus .whyus-content .large {
+.whyus-wrapper .whyus .whyus-content .large {
   display: block;
   margin: 20px 0;
   font-size: 24px;
 }
-.whyus .whyus-content-image {
+.whyus-wrapper .whyus .whyus-content-image {
   width: 100%;
 }
 
@@ -12411,6 +12412,43 @@ header a.nav-phone:hover {
 }
 .technology .btn-technology-choose:hover {
   background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+}
+
+.geo-wrapper .geo-brand {
+  position: relative;
+  top: -6px;
+  margin-left: 12px;
+  display: inline-block;
+  color: #727271;
+}
+.geo-wrapper .geo-brand img {
+  width: 356.03px;
+  height: 48.8px;
+}
+.geo-wrapper .geo-brand .logo-r {
+  position: relative;
+  top: 4px;
+  left: -12px;
+}
+.geo-wrapper .geo {
+  list-style: disc;
+}
+.geo-wrapper .geo ul {
+  margin: 20px 0;
+}
+.geo-wrapper .geo ul li {
+  list-style: disc;
+}
+.geo-wrapper .geo ul li::marker {
+  color: #E91350;
+  font-size: 1.5rem;
+}
+.geo-wrapper .geo ul li a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+.geo-wrapper .geo ul li a:hover {
+  color: #3f91ad;
 }
 
 footer {

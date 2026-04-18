@@ -1,35 +1,35 @@
 .whyus-wrapper {
   background-color: rgba(217, 217, 217, 0.5);
-}
 
-.whyus {
-  
-  .whyus-brand {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    color: #727271;
+  .whyus {
 
-    img {
-      width: 296.85px;
-      height: 40.67px;
-    }
-  }
-
-  .whyus-content {
-    font-family: $font-family-montserrat;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 400;
-
-    .large {
+    .whyus-brand {
       display: block;
-      margin: 20px 0;
-      font-size: 24px;
-    }
-  }
+      margin-top: 20px;
+      margin-bottom: 60px;
+      color: #727271;
 
-  .whyus-content-image {
-    width: 100%;
+      img {
+        width: 296.85px;
+        height: 40.67px;
+      }
+    }
+
+    .whyus-content {
+      font-family: $font-family-montserrat;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 400;
+
+      .large {
+        display: block;
+        margin: 20px 0;
+        font-size: 24px;
+      }
+    }
+
+    .whyus-content-image {
+      width: 100%;
+    }
   }
 }
