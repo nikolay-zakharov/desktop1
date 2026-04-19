@@ -1,0 +1,24 @@
+.bg-water {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    background-image: url("../img/bg/water.png");
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to right, black calc(50% - 660px - 20px), transparent calc(50% - 660px - 20px));
+    mask-image: linear-gradient(to right, black calc(50% - 660px - 20px), transparent calc(50% - 660px - 20px));
+  }
+}
+
+.bg-leafs {
+  background-image: url("../img/bg/5.svg"), url("../img/bg/6.svg"), url("../img/bg/7.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% - 820px) 1090px, calc(50% - 820px) 1420px, calc(50% + 730px) 1060px;
+}

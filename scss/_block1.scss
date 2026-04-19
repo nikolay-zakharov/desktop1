@@ -1,15 +1,21 @@
-.stats {
-  margin-top: 40px;
-  font-family: $font-family-georama;
+.stats-wrapper {
+  background-image: url("../img/bg/1.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 660px) center;
 
-  .stats-brand {
-    display: block;
-    margin-bottom: 20px;
-    color: #727271;
+  .stats {
+    margin-top: 40px;
+    font-family: $font-family-georama;
 
-    img {
-      width: 392.3px;
-      height: 54.22px;
+    .stats-brand {
+      display: block;
+      margin-bottom: 20px;
+      color: #727271;
+
+      img {
+        width: 392.3px;
+        height: 54.22px;
+      }
     }
   }
 }

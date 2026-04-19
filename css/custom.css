@@ -11909,10 +11909,10 @@ h2, .h2 {
 }
 
 .promo-block {
-  padding: 40px 0;
+  padding: 35px 0;
 }
 
-.technology .btn-technology-choose, .catalog .btn-product-details, .catalog .btn-product-calculate, .btn-gradient-red, .btn-gradient-blue {
+.technology .btn-technology-choose, .catalog-wrapper .catalog .btn-product-details, .catalog-wrapper .catalog .btn-product-calculate, .btn-gradient-red, .btn-gradient-blue {
   border-radius: 15px;
   border: none;
   text-transform: uppercase;
@@ -11922,7 +11922,7 @@ h2, .h2 {
   color: #ffffff;
   letter-spacing: 0;
 }
-.technology .btn-technology-choose:hover, .catalog .btn-product-details:hover, .catalog .btn-product-calculate:hover, .btn-gradient-red:hover, .btn-gradient-blue:hover {
+.technology .btn-technology-choose:hover, .catalog-wrapper .catalog .btn-product-details:hover, .catalog-wrapper .catalog .btn-product-calculate:hover, .btn-gradient-red:hover, .btn-gradient-blue:hover {
   color: #ffffff;
   opacity: 0.9;
 }
@@ -12208,60 +12208,70 @@ header a.nav-phone:hover {
   opacity: 1;
 }
 
-.stats {
+.stats-wrapper {
+  background-image: url("../img/bg/1.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 660px) center;
+}
+.stats-wrapper .stats {
   margin-top: 40px;
   font-family: "Georama", sans-serif;
 }
-.stats .stats-brand {
+.stats-wrapper .stats .stats-brand {
   display: block;
   margin-bottom: 20px;
   color: #727271;
 }
-.stats .stats-brand img {
+.stats-wrapper .stats .stats-brand img {
   width: 392.3px;
   height: 54.22px;
 }
 
-.catalog {
+.catalog-wrapper {
+  background-image: url("../img/bg/2.svg"), url("../img/bg/3.svg"), url("../img/bg/4.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% - 820px) 500px, calc(50% + 820px) 970px, calc(50% + 820px) 1320px;
+}
+.catalog-wrapper .catalog {
   margin-top: 34px;
   font-family: "Georama", sans-serif;
 }
-.catalog .product-grid {
+.catalog-wrapper .catalog .product-grid {
   margin-top: 6px;
   margin-bottom: 20px;
 }
-.catalog .product-card {
+.catalog-wrapper .catalog .product-card {
   margin: 0 4px;
   text-transform: none;
   text-align: left;
 }
-.catalog .product-card-inner {
+.catalog-wrapper .catalog .product-card-inner {
   padding: 16px 20px;
 }
-.catalog .product-title {
+.catalog-wrapper .catalog .product-title {
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
   color: #3c3c3c;
   text-align: left;
 }
-.catalog .product-body {
+.catalog-wrapper .catalog .product-body {
   font-size: 16px;
   color: #3c3c3c;
   line-height: 1.5;
   text-wrap: nowrap;
 }
-.catalog .product-price {
+.catalog-wrapper .catalog .product-price {
   font-size: 16px;
   font-weight: 600;
   color: #e91350;
   margin: 26px 0;
   text-align: right;
 }
-.catalog .product-price .number {
+.catalog-wrapper .catalog .product-price .number {
   font-size: 32px;
 }
-.catalog .btn-product-details, .catalog .btn-product-calculate {
+.catalog-wrapper .catalog .btn-product-details, .catalog-wrapper .catalog .btn-product-calculate {
   font-size: 15px;
   font-weight: 500;
   text-transform: none;
@@ -12269,30 +12279,30 @@ header a.nav-phone:hover {
   border-radius: 10px;
   color: #ffffff;
 }
-.catalog .btn-product-calculate {
+.catalog-wrapper .catalog .btn-product-calculate {
   background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
   padding: 13px 22px;
 }
-.catalog .btn-product-calculate:hover {
+.catalog-wrapper .catalog .btn-product-calculate:hover {
   background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
 }
-.catalog .btn-product-details {
+.catalog-wrapper .catalog .btn-product-details {
   border: 1px solid #454545;
   background-color: #fff;
   color: #3c3c3c;
   padding: 13px 32px;
 }
-.catalog .btn-product-details:hover {
+.catalog-wrapper .catalog .btn-product-details:hover {
   background-color: #eeeeee;
   color: #3c3c3c;
 }
-.catalog .product-image {
+.catalog-wrapper .catalog .product-image {
   height: 195px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.catalog .product-image img {
+.catalog-wrapper .catalog .product-image img {
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -12301,7 +12311,7 @@ header a.nav-phone:hover {
 }
 
 .whyus-wrapper {
-  background-color: rgba(217, 217, 217, 0.5);
+  background: linear-gradient(to right, transparent calc(50% - 660px - 20px), #ececec calc(50% - 660px - 20px));
 }
 .whyus-wrapper .whyus .whyus-brand {
   display: block;
@@ -12645,6 +12655,29 @@ footer .social .social-item img {
   margin: 0 auto;
   width: auto;
   height: 35px;
+}
+
+.bg-water {
+  position: relative;
+}
+.bg-water::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../img/bg/water.png");
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right, black calc(50% - 660px - 20px), transparent calc(50% - 660px - 20px));
+  mask-image: linear-gradient(to right, black calc(50% - 660px - 20px), transparent calc(50% - 660px - 20px));
+}
+
+.bg-leafs {
+  background-image: url("../img/bg/5.svg"), url("../img/bg/6.svg"), url("../img/bg/7.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% - 820px) 1090px, calc(50% - 820px) 1420px, calc(50% + 730px) 1060px;
 }
 
 /*# sourceMappingURL=custom.css.map */

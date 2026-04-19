@@ -1,94 +1,100 @@
-.catalog {
-  margin-top: 34px;
-  font-family: $font-family-georama;
+.catalog-wrapper {
+  background-image: url("../img/bg/2.svg"), url("../img/bg/3.svg"), url("../img/bg/4.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: calc(50% - 820px) 500px, calc(50% + 820px) 970px, calc(50% + 820px) 1320px;
 
-  .product-grid {
-    margin-top: 6px;
-    margin-bottom: 20px;
-  }
+  .catalog {
+    margin-top: 34px;
+    font-family: $font-family-georama;
 
-  .product-card {
-    margin: 0 4px;
-    text-transform: none;
-    text-align: left;
-  }
+    .product-grid {
+      margin-top: 6px;
+      margin-bottom: 20px;
+    }
 
-  .product-card-inner {
-    padding: 16px 20px;
-  }
+    .product-card {
+      margin: 0 4px;
+      text-transform: none;
+      text-align: left;
+    }
 
-  .product-title {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #3c3c3c;
-    text-align: left;
-  }
+    .product-card-inner {
+      padding: 16px 20px;
+    }
 
-  .product-body {
-    font-size: 16px;
-    color: #3c3c3c;
-    line-height: 1.5;
-    text-wrap: nowrap;
-  }
-
-  .product-price {
-    font-size: 16px;
-    font-weight: 600;
-    color: #e91350;
-    margin: 26px 0;
-    text-align: right;
-
-    .number {
+    .product-title {
       font-size: 32px;
-    }
-  }
-
-  %btn-product-base {
-    @extend %btn-gradient-base;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: none;
-    height: 49px;
-    border-radius: 10px;
-    color: #ffffff;
-  }
-
-  .btn-product-calculate {
-    @extend %btn-product-base;
-    background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
-    padding: 13px 22px;
-
-    &:hover {
-      background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
-    }
-  }
-
-  .btn-product-details {
-    @extend %btn-product-base;
-    border: 1px solid #454545;
-    background-color: #fff;
-    color: #3c3c3c;
-    padding: 13px 32px;
-
-    &:hover {
-      background-color: #eeeeee;
+      font-weight: 600;
+      text-transform: uppercase;
       color: #3c3c3c;
+      text-align: left;
     }
-  }
 
-  .product-image {
-    height: 195px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    .product-body {
+      font-size: 16px;
+      color: #3c3c3c;
+      line-height: 1.5;
+      text-wrap: nowrap;
+    }
 
-    img {
-      width: auto;
-      object-fit: contain;
-      flex-shrink: 0;
-      max-height: 100%;
-      max-width: 100%;
+    .product-price {
+      font-size: 16px;
+      font-weight: 600;
+      color: #e91350;
+      margin: 26px 0;
+      text-align: right;
+
+      .number {
+        font-size: 32px;
+      }
+    }
+
+    %btn-product-base {
+      @extend %btn-gradient-base;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: none;
+      height: 49px;
+      border-radius: 10px;
+      color: #ffffff;
+    }
+
+    .btn-product-calculate {
+      @extend %btn-product-base;
+      background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+      padding: 13px 22px;
+
+      &:hover {
+        background: linear-gradient(90deg, #31d7dd 0%, #4787f6 100%);
+      }
+    }
+
+    .btn-product-details {
+      @extend %btn-product-base;
+      border: 1px solid #454545;
+      background-color: #fff;
+      color: #3c3c3c;
+      padding: 13px 32px;
+
+      &:hover {
+        background-color: #eeeeee;
+        color: #3c3c3c;
+      }
+    }
+
+    .product-image {
+      height: 195px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
   }
 }
